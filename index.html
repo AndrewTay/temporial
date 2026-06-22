@@ -28,7 +28,7 @@
     --glass-blur:blur(16px) saturate(140%);
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;scroll-padding-top:72px}
   body{font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 
   /* ============ SCROLL VIDEO BACKGROUND ============ */
@@ -311,6 +311,39 @@
     .equity{flex-direction:column;align-items:flex-start}
     .nav-cta{display:none}
     section{padding:74px 0}
+  }
+  /* ============ MOBILE POLISH ============ */
+  @media (max-width:600px){
+    .wrap{padding:0 18px}
+    .nav-in{padding:12px 18px}
+    .foot-in{padding:0 18px;flex-direction:column;align-items:flex-start;gap:16px}
+    .foot-in .t{max-width:100%}
+    section{padding:62px 0}
+    .hero{padding:96px 0 60px}
+    .hero h1{margin:6px 0 20px}
+    .hero .lead{margin-bottom:30px}
+    .wave-strip{margin-top:38px}
+    .cta-row{width:100%}
+    .cta-row .btn{width:100%;justify-content:center;padding:15px 22px}
+    .card{padding:24px}
+    .vs .col{padding:22px}
+    .stat{padding:26px 22px}
+    .role{padding:24px}
+    .equity{padding:24px}
+    .nope{padding:22px 20px}
+    .moment{padding:80px 0}
+    .moment-kicker{margin-bottom:26px}
+    .moment-names{margin-top:34px;padding-top:22px;gap:10px 22px}
+    .proof-sub{margin:40px 0 14px}
+  }
+  @media (max-width:400px){
+    .wrap{padding:0 15px}
+    .nav-in{padding:11px 15px}
+    .foot-in{padding:0 15px}
+    .brand .wm{font-size:.98rem}
+    .moment-names{gap:8px 16px}
+    .moment-names span{font-size:.76rem}
+    .paper-links a{padding:7px 12px}
   }
   @media (prefers-reduced-motion:reduce){
     *{scroll-behavior:auto!important}
